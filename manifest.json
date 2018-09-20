@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "copytextandurl",
+    "name": "Copy selected text and URL as markdown link",
     "description": "Copy selected text as linktest with current URL as link in markdown.",
-    "version": "1.0",
+    "version": "1.0.1",
     "homepage_url": "https://github.com/klml/copytextandurl",
 
     "applications": {
