@@ -16,7 +16,7 @@ Copied from [webextensions-examples context-menu-copy-link-with-types](https://g
 ## Todo
 
 * [Shortcut](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/commands)
-* other [lightweight markup languages](https://en.wikipedia.org/wiki/Lightweight_markup_language): mediaikitext, rst, textile, plain, jira etc.
+* config for other [lightweight markup languages](https://en.wikipedia.org/wiki/Lightweight_markup_language): mediawikitext, rst, textile, plain, jira etc.
 * icon
 
 ## Other and similar addons
