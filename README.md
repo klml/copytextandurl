@@ -8,6 +8,8 @@ Will produce:
 [established](http://www.example.org/)
 ```
 
+Available for firefox [addons.mozilla.org copytextandurl/](https://addons.mozilla.org/en-US/firefox/addon/copytextandurl/)
+
 
 Copied from [webextensions-examples context-menu-copy-link-with-types](https://github.com/mdn/webextensions-examples/tree/master/context-menu-copy-link-with-types)
 
