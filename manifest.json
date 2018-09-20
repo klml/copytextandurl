@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Context menu: Copy link with types",
+    "name": "copytextandurl",
     "description": "Copy selected text as linktest with current URL as link in markdown.",
     "version": "1.0",
     "homepage_url": "https://github.com/klml/copytextandurl",
