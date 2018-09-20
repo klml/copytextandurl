@@ -31,6 +31,7 @@ Other and similar addons, copying a selected text and the current URL as markdow
 established
 ```
 
-Addons with another focus, copying the current URL with its pagetitle.
+Addons with another focus, _copying the current URL with its pagetitle_ or _copys links in a page as markdown links_.
 
-* [Copy as Markdown](https://addons.mozilla.org/de/android/addon/copy-as-markdown/) additionally copys links in a page as markdown links.
+* [Copy as Markdown](https://addons.mozilla.org/de/android/addon/copy-as-markdown/)
+* [Copy Link/Tab Name and URL ](https://addons.mozilla.org/en-US/firefox/addon/copy-linktab-name-and-url/)
