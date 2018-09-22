@@ -1,7 +1,7 @@
 # Copy text as markdown link
 
 
-[Browser addon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons) to copy selected text as linktest with current URL as link in markdown.
+[Browser addon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons) to copy selected text as linktext with current URL as link in markdown.
 
 Will produce:
 ```
