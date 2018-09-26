@@ -1,12 +1,16 @@
-# Copy text as markdown link
+# Copy selected text as link in lightweight markup languages
 
 
-[Browser addon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons) to copy selected text as linktext with current URL as link in markdown.
+[Browser addon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons) to copy selected text as linktext with current URL as link in [lightweight markup languages](https://en.wikipedia.org/wiki/Lightweight_markup_language):
 
-Will produce:
-```
-[established](http://www.example.org/)
-```
+* markdown ```[established](http://www.example.org/)```
+* MediaWiki ```[http://www.example.org/ established]```
+* Textile ```"established":http://www.example.org/```
+* JIRA ```[established|http://www.example.org/]```
+* Tiki ```[http://www.example.org/|established0```
+* Plaintext ```established <http://www.example.org/>```
+
+
 
 Available for firefox [addons.mozilla.org copytextandurl/](https://addons.mozilla.org/en-US/firefox/addon/copytextandurl/)
 
@@ -16,7 +20,7 @@ Copied from [webextensions-examples context-menu-copy-link-with-types](https://g
 ## Todo
 
 * [Shortcut](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/commands)
-* config for other [lightweight markup languages](https://en.wikipedia.org/wiki/Lightweight_markup_language): mediawikitext, rst, textile, plain, jira etc.
+* config for other lightweight markup languages
 * icon
 
 ## Other and similar addons

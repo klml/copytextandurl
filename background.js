@@ -1,17 +1,38 @@
-browser.contextMenus.create({
-    id: "copy-selection-link-clipboard",
-    title: "Copy markdown link",
-    contexts: ["selection"],
+var configs = [
+[ "copy markdown link",     "[$LINKTEXT]($URL)" ],
+[ "copy MediaWiki link",    "[$URL $LINKTEXT]" ],
+[ "copy Textile link",      "\"$LINKTEXT\":$URL" ],
+[ "copy JIRA link",         "[$LINKTEXT|$URL]" ],
+[ "copy Tiki link",         "[$URL|$LINKTEXT]" ],
+[ "copy Plaintext link",     "$LINKTEXT <$URL>" ]
+]
+
+
+configs.forEach(function( config, index ) {
+    browser.contextMenus.create({
+        // add index from configs to id, index needed for buildLink
+        id: "copy-selection-link-clipboard-" + index.toString() ,
+        title: config[0],
+        contexts: ["selection"],
+    });
 });
+
+
 browser.contextMenus.onClicked.addListener((info, tab) => {
-    if (info.menuItemId === "copy-selection-link-clipboard") {
+    // get index nr from menu id text
+    var configsId = parseInt( info.menuItemId.replace('copy-selection-link-clipboard-','') );
 
-        browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {
+    if ( configsId >= 0 && configsId < configs.length ) {
+        buildLink( configs[ configsId ][1] );
+    };
 
-            var mdlink = "[" + info.selectionText + "](" + tabs[0].url + ")" ;
+    function buildLink( template ) {
+
+            browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {
+            var hyperlink = template.replace("$LINKTEXT", info.selectionText ).replace("$URL", tabs[0].url );
 
             // clipboard-helper.js defines function copyToClipboard.
-            const code = "copyToClipboard(" + JSON.stringify( mdlink ) +  ");";
+            const code = "copyToClipboard(" + JSON.stringify( hyperlink ) +  ");";
     
             browser.tabs.executeScript({
                 code: "typeof copyToClipboard === 'function';",
