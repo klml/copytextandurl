@@ -17,8 +17,7 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
     function buildLink( template ) {
 
             browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {
-            var hyperlink = template.replace("$LINKTEXT", info.selectionText ).replace("$URL", tabs[0].url );
-
+            var hyperlink = template.replace("$LINKTEXT", info.selectionText ).replace("$URL", tabs[0].url ).replace("$TITLE", tabs[0].title );
             // clipboard-helper.js defines function copyToClipboard.
             const code = "copyToClipboard(" + JSON.stringify( hyperlink ) +  ");";
     

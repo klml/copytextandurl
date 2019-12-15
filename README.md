@@ -10,6 +10,7 @@ Examples Template:
 |               | Template             | Result                                        |
 | ------------- |:--------------------:| ---------------------------------------------:|
 | markdown      | `[$LINKTEXT]($URL)`  | ```[established](http://www.example.org/)```  |
+| markdown      | `[$LINKTEXT]($URL "$TITLE")`  | ```[established](http://example.org/ "Example Domain")```  |
 | MediaWiki     | `[$URL $LINKTEXT]`   | ```[http://www.example.org/ established]```   |
 | Textile       | `\"$LINKTEXT\":$URL` | ```"established":http://www.example.org/```   |
 | JIRA          | `[$LINKTEXT|$URL]`   | ```[established|http://www.example.org/]```   |
