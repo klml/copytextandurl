@@ -5,14 +5,47 @@
   </head>
 <body>
   <form>
-      <label>Description</label>
-      <input type="text" id="description" >
-      <br>
-      <label>Template</label>
-      <input type="text" id="template" >
-      <br>
+      <input type="text" id="description" placeholder="Description">
+      <input type="text" id="template" placeholder="Template">
       <button type="submit">Save</button>
   </form>
+
+  <h3>template examples</h3>
+    <form class="examples" id="md">
+      <input type="text"  class="description" value="copy link in markdown" readonly>
+      <input type="text" class="template" value='[$LINKTEXT]($URL "$TITLE")' readonly>
+      <button type="submit">Prefill</button>
+    </form>
+    <form class="examples" id="mw">
+      <input type="text" class="description" value="copy link in MediaWiki" readonly>
+      <input type="text" class="template" value="[$URL $LINKTEXT]" readonly>
+      <button type="submit">Prefill</button>
+    </form>
+    <form class="examples">
+      <input type="text" class="description" value="copy link in Textile" readonly>
+      <input type="text" class="template" value='"$LINKTEXT":$URL' readonly>
+      <button type="submit">Prefill</button>
+    </form>
+    <form class="examples">
+    <input type="text" class="description" value="copy link in JIRA" readonly>
+    <input type="text" class="template" value="[$LINKTEXT|$URL]" readonly>
+    <button type="submit">Prefill</button>
+    </form>
+    <form class="examples">
+    <input type="text" class="description" value="copy link in Tiki" readonly>
+    <input type="text" class="template" value="[$URL|$LINKTEXT]" readonly>
+    <button type="submit">Prefill</button>
+    </form>
+    <form class="examples">
+    <input type="text" class="description" value="copy link in Plaintext" readonly>
+    <input type="text" class="template" value="$LINKTEXT $URL" readonly>
+    <button type="submit">Prefill</button>
+    </form>
+    <form class="examples">
+    <input type="text" class="description" value="copy link in <Plaintext>" readonly>
+    <input type="text" class="template" value="$LINKTEXT <$URL>" readonly>
+    <button type="submit">Prefill</button>
+    </form>
   <script src="options.js"></script>
 </body>
 </html>

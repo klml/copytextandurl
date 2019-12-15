@@ -19,5 +19,19 @@ function restoreOptions() {
   });
 }
 
+function prefillOptions(e) {
+  document.querySelector("#description").value    = this.querySelector(".description").value;
+  document.querySelector("#template").value       = this.querySelector(".template").value;
+  e.preventDefault();
+}
+
+function loadPrefillOptions() {
+  var examples = document.querySelectorAll(".examples");
+  for (let i = 0; i < examples.length; i++) {
+    examples[i].addEventListener("submit", prefillOptions);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', restoreOptions);
 document.querySelector("form").addEventListener("submit", saveOptions);
+document.addEventListener('DOMContentLoaded', loadPrefillOptions);
