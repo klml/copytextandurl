@@ -1,30 +1,18 @@
-var configs = [
-[ "copy markdown link",     "[$LINKTEXT]($URL)" ],
-[ "copy MediaWiki link",    "[$URL $LINKTEXT]" ],
-[ "copy Textile link",      "\"$LINKTEXT\":$URL" ],
-[ "copy JIRA link",         "[$LINKTEXT|$URL]" ],
-[ "copy Tiki link",         "[$URL|$LINKTEXT]" ],
-[ "copy Plaintext link",     "$LINKTEXT <$URL>" ]
-]
-
-
-configs.forEach(function( config, index ) {
+var getting_description = browser.storage.sync.get('description');
+getting_description.then((res) => {
     browser.contextMenus.create({
-        // add index from configs to id, index needed for buildLink
-        id: "copy-selection-link-clipboard-" + index.toString() ,
-        title: config[0],
+        id: "copy-selection-link-clipboard",
+        title: res.description,
         contexts: ["selection"],
     });
 });
 
-
 browser.contextMenus.onClicked.addListener((info, tab) => {
-    // get index nr from menu id text
-    var configsId = parseInt( info.menuItemId.replace('copy-selection-link-clipboard-','') );
 
-    if ( configsId >= 0 && configsId < configs.length ) {
-        buildLink( configs[ configsId ][1] );
-    };
+    var getting_template = browser.storage.sync.get('template');
+    getting_template.then((res) => {
+        buildLink( res.template )
+    });
 
     function buildLink( template ) {
 

@@ -2,14 +2,21 @@
 
 
 [Browser addon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons) to copy selected text as linktext with current URL as link in [lightweight markup languages](https://en.wikipedia.org/wiki/Lightweight_markup_language):
+Configure your own flavoured language.
 
-* markdown ```[established](http://www.example.org/)```
-* MediaWiki ```[http://www.example.org/ established]```
-* Textile ```"established":http://www.example.org/```
-* JIRA ```[established|http://www.example.org/]```
-* Tiki ```[http://www.example.org/|established0```
-* Plaintext ```established <http://www.example.org/>```
+Examples Template:
 
+
+|               | Template             | Result                                        |
+| ------------- |:--------------------:| ---------------------------------------------:|
+| markdown      | `[$LINKTEXT]($URL)`  | ```[established](http://www.example.org/)```  |
+| MediaWiki     | `[$URL $LINKTEXT]`   | ```[http://www.example.org/ established]```   |
+| Textile       | `\"$LINKTEXT\":$URL` | ```"established":http://www.example.org/```   |
+| JIRA          | `[$LINKTEXT|$URL]`   | ```[established|http://www.example.org/]```   |
+| Tiki          | `[$URL|$LINKTEXT]`   | ```[http://www.example.org/|established0```   |
+| Plaintext     | `$LINKTEXT $URL`     | ```established <http://www.example.org/>```   |
+| <Plaintext>   | `$LINKTEXT <$URL>`   | ```established <http://www.example.org/>```   |
+| Your own      | `$LINKTEXT <$URL> - is send to you by klml`   | ```established <http://www.example.org/>  - is send to you by klml```   |
 
 
 Available in [v1.1](https://github.com/klml/copytextandurl/tree/v1.1) (only markdown) for firefox [addons.mozilla.org copytextandurl/](https://addons.mozilla.org/en-US/firefox/addon/copytextandurl/)
