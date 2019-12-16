@@ -7,19 +7,19 @@ Configure your own flavoured language.
 Examples Template:
 
 
-|               | Template             | Result                                        |
-| ------------- |----------------------| ----------------------------------------------|
-| [Markdown](https://daringfireball.net/projects/markdown/syntax#link) | `[$LINKTEXT]($URL)`  | ```[established](http://www.example.org/)```  |
-| markdown      | `[$LINKTEXT]($URL "$TITLE")`  | ```[established](http://example.org/ "Example Domain")```  |
-| [MediaWiki](https://www.mediawiki.org/wiki/Help:Links#External_links)     | `[$URL $LINKTEXT]`   | ```[http://www.example.org/ established]```   |
-| [Textile](https://textile-lang.com/doc/links)       | `"$LINKTEXT":$URL`   | ```"established":http://www.example.org/```   |
-| [JIRA](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=links) | `[$LINKTEXT\|$URL]`   | ```[established\|http://www.example.org/]```   |
-| [Tiki](https://doc.tiki.org/Wiki-Syntax-Links)          | `[$URL\|$LINKTEXT]`   | ```[http://www.example.org/\|established]```   |
-| [TeX](https://www.tug.org/applications/hyperref/manual.html#x1-20001)           | `\href{$URL}{$LINKTEXT}`     | ```\href{http://www.example.org/}{established}```   |
-| plain [HTML](https://www.w3schools.com/html/html_links.asp)    | `<a href="$URL">$LINKTEXT</a>`     | ```<a href="http://www.example.org/">established</a>```   |
-| Plaintext     | `$LINKTEXT $URL`     | ```established http://www.example.org/```   |
-| <Plaintext>   | `$LINKTEXT <$URL>`   | ```established <http://www.example.org/>```   |
-| Your own      | `$LINKTEXT <$URL> - is send to you by me`   | ```established <http://www.example.org/>  - is send to you by me```   |
+|                                                                                       | Template                      | Result                                                |
+| ------------------------------------------------------------------------------------- |-------------------------------| ------------------------------------------------------|
+| [Markdown](https://daringfireball.net/projects/markdown/syntax#link)                  | `[$LINKTEXT]($URL)`           | `[established](http://www.example.org/)`              |
+| markdown                                                                              | `[$LINKTEXT]($URL "$TITLE")`  | `[established](http://example.org/ "Example Domain")` |
+| [MediaWiki](https://www.mediawiki.org/wiki/Help:Links#External_links)                 | `[$URL $LINKTEXT]`            | `[http://www.example.org/ established]`               |
+| [Textile](https://textile-lang.com/doc/links)                                         | `"$LINKTEXT":$URL`            | `"established":http://www.example.org/`               |
+| [JIRA](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=links)   | `[$LINKTEXT\|$URL]`           | `[established\|http://www.example.org/]`              |
+| [Tiki](https://doc.tiki.org/Wiki-Syntax-Links)                                        | `[$URL\|$LINKTEXT]`           | `[http://www.example.org/\|established]`              |
+| [TeX](https://www.tug.org/applications/hyperref/manual.html#x1-20001)                 | `\href{$URL}{$LINKTEXT}`      | `\href{http://www.example.org/}{established}`         |
+| plain [HTML](https://www.w3schools.com/html/html_links.asp)                           | `<a href="$URL">$LINKTEXT</a>`| `<a href="http://www.example.org/">established</a>`   |
+| Plaintext                                                                             | `$LINKTEXT $URL`              | `established http://www.example.org/`                 |
+| <Plaintext>                                                                           | `$LINKTEXT <$URL>`            | `established <http://www.example.org/>`               |
+| Your own                                                                              | `$LINKTEXT $URL send by me`   | `established http://www.example.org/  send by me`     |
 
 
 Available in [v1.1](https://github.com/klml/copytextandurl/tree/v1.1) (only markdown) for firefox [addons.mozilla.org copytextandurl/](https://addons.mozilla.org/en-US/firefox/addon/copytextandurl/)
