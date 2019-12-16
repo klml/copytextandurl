@@ -4,8 +4,7 @@
 [Browser addon](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons) to copy selected text as linktext with current URL as link in [lightweight markup languages](https://en.wikipedia.org/wiki/Lightweight_markup_language):
 Configure your own flavoured language.
 
-Examples Template:
-
+## Examples Templates
 
 |                                                                                       | Template                      | Result                                                |
 | ------------------------------------------------------------------------------------- |-------------------------------| ------------------------------------------------------|
