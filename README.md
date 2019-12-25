@@ -21,7 +21,7 @@ Configure your own flavoured language template.
 | Your own                                                                              | `$LINKTEXT $URL send by me`   | `established http://www.example.org/  send by me`     |
 
 
-Available in [v1.1](https://github.com/klml/copytextandurl/tree/v1.1) (only markdown) for firefox [addons.mozilla.org copytextandurl/](https://addons.mozilla.org/en-US/firefox/addon/copytextandurl/)
+Available for firefox [addons.mozilla.org copytextandurl/](https://addons.mozilla.org/en-US/firefox/addon/copytextandurl/)
 
 
 Copied from [webextensions-examples context-menu-copy-link-with-types](https://github.com/mdn/webextensions-examples/tree/master/context-menu-copy-link-with-types)
