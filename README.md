@@ -29,7 +29,6 @@ Copied from [webextensions-examples context-menu-copy-link-with-types](https://g
 ## Todo
 
 * [Shortcut](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/commands)
-* config for other lightweight markup languages
 * icon
 
 ## Other and similar addons
